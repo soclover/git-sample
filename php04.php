@@ -80,8 +80,8 @@
                                          //再提出2023-05-06
                                          function multi($arr){
                                          $result = $arr[0];
-                                                for($i=1;$i<count($arr);$i++){
-                                                $result *= $arr[$i];
+                                                foreach($arr as $a){
+                                                $result *= $a;
                                                 }
                                             return $result;
                                             }
