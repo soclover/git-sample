@@ -72,9 +72,8 @@ echo "課題3\n";
     echo "フルーツの種類は".count($fruits)."種類です。\n";
     //=> 5 と表示される。
 
-    for ($i = 0; $i < count($fruits); $i++) {
-      echo "NO." . ($i + 1)." " . $fruits[$i];
-        echo "\n";
+    foreach ($fruits as $fruit) {
+      echo $fruit."\n";
         }
         echo "\n";
 
