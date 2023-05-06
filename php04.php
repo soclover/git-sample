@@ -77,13 +77,25 @@
                                          }
                                          echo add(7,13);
                                          echo "<h2>課題3.</h2>";
-                                         function arr(){
+                                         //再提出2023-05-06
+                                         function multi($arr){
+                                         $result = $arr[0];
+                                                for($i=1;$i<count($arr);$i++){
+                                                $result *= $arr[$i];
+                                                }
+                                            return $result;
+                                            }
+                                        $arr = array(1, 3, 5 ,7, 9);
+                                        echo multi($arr);
+                                         
+                                        /* 間違ったものは失敗の記録としてコメントアウト
+                                        function arr(){
                                          $array = array(1,3,5,7,9);
                                           $result = array_product($array);
                                            return $result;
                                            }
                                            echo arr();
-
+                                        */
                                            echo "<h2>課題4.</h2>";
                                            function max_array($arr){
                                                $arr = array(1,3.2,50000,700,4);
