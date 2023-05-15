@@ -79,13 +79,13 @@
                                          echo "<h2>課題3.</h2>";
                                          //再提出2023-05-06
                                          function multi($arr){
-                                         $result = $arr[0];
+                                         $result = 1;
                                                 foreach($arr as $a){
                                                 $result *= $a;
                                                 }
                                             return $result;
                                             }
-                                        $arr = array(1, 3, 5 ,7, 9);
+                                        $arr = array(9, 3, 5 ,7, 1);
                                         echo multi($arr);
                                          
                                         /* 間違ったものは失敗の記録としてコメントアウト
